@@ -1,0 +1,11 @@
+1) Jenkins build for it_tick project
+2) After build copy from docker to local 
+docker cp 3dcf62a1f725:/var/jenkins_home/workspace/IT-Ticket/target/it-ticket-0.0.1-SNAPSHOT.jar .
+2) Run the project 
+	java -jar it-ticket-0.0.1-SNAPSHOT.jar
+
+Once the application running fine 
+use the below swagger url in chrome
+http://localhost:8085/swagger-ui/index.html#/accessory-controller/getAllAccessoryType
+
+Since this application is tokenized , use the below url in postman to get token
